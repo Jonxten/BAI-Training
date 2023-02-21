@@ -1,0 +1,378 @@
+// /*
+// Name: Quickreach
+// Author: RFrancisco
+// Email: rfrancisco@blastasia.com
+// File: scss
+// Version: 1.2
+// */
+
+// // Variables
+// @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap&subset=devanagari,latin-ext");
+// //@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// $bodyfont: "Poppins", sans-serif;
+// $headingfont: "Poppins", sans-serif;
+// @import "~@angular/material/theming";
+
+// /*Material Theme Colors */
+
+// $primary: mat-palette($mat-blue, 600);
+// $accent: mat-palette($mat-indigo, 500);
+// $warn: mat-palette($mat-pink, 500);
+// $theme: mat-light-theme($primary, $accent, $warn);
+// $background: map-get($theme, background);
+// $foreground: map-get($theme, foreground);
+
+
+// /* STEER COLOR BRANDING */
+// $yelloworange: #F9A93B ;
+// $sunset:#F9BB35;
+// $creamyellow: #FDE2A0;
+// $palecyan:#98D7DC;
+// $cyan50:#6FCACD;
+// $cyan100:#34A7AA ; 
+// $charcoal:#1E1F1F;
+// $gray100: #6C6E70;
+// $gray50: #A7A9AC;
+// $gray30: #E6E7E8;
+// $gray-3: #828282;
+// $warningred: #ff4f4f;
+
+// /* OFFICIAL QR COLOR - FROM DX Team */
+// /* Main */
+// $qrdteal:#018AA5;
+// $qrwhite: #f2f2f2;
+// $qrblack: #101010;
+// $qryellow: #FAE2A9;
+// $qrblue: #A9E2FA;
+
+// /* Supplimentary */
+// $qrlilac: #CBA9FA;
+// $qrteal: #A9FAF1;
+
+// /* Tertiary */
+// $qrred: #FAA9A9;
+// $qrorange: #FAC4A9;
+// $qrgreen: #A9FAAF;
+// $qrviolet: #A9AFFA;
+
+// /* Others */
+
+
+// // Default Theme
+// @include angular-material-theme($theme);
+
+// //Global Custom Colors
+// $radicalred: #f62d51;
+// $fushiablue: #6f42c1;
+// $bamboo: #dd6705;
+// $easternblue: #17a2b8;
+// $scooter: #26c6da;
+// $curiousblue: #1e88e5;
+// $cadetblue: #b2bac4;
+// $outerspace: #343a40;
+// $fiord: #455a64;
+// $blacksqueeze: #eef5f9;
+// $black: #000000;
+// $dustygray: #979797;
+// $gullgray: #030303;
+// $white: #ffffff;
+// $bluebayoux: #54667a;
+// $navyblue: #3467B2;
+
+// // Extra Variable
+// $rgt: right;
+// $lft: left;
+// $border: #99abb4;
+// $table-border: #f3f1f1;
+// $card-brd: #d7dfe3;
+// $dark-text: #848a96;
+// $radius: 5px;
+// $form-brd: #d9d9d9;
+
+// //Theme Colors
+// $topbar: #98D7DC;
+// $sidebar: #ffffff;
+// $sidebar-white: #e5edef;
+// $sidebar-alt: #f2f6f8;
+// $bodycolor: #fafafa; //#F7F7F7;
+// $headingtext: #455a64;
+// $bodytext: #67757c;
+// $sidebar-text: #647081;
+// $sidebar-text-alt: #455a64;
+// $sidebar-icons: #647081;
+// $light-text: #a6b7bf;
+// $themecolor: #34A7AA ;
+// $themecolor-alt: #98D7DC ;
+// $themecolor-dark: #34A7AA ;
+
+// //bootstrap Color
+// $danger: #cc1b17;
+// $success: #45ce6b;
+// $warning: #f6a801;
+// $primary: #7460ee;
+// $info: #2196F3;
+// $inverse: #2f3d4a;
+// $muted: #99abb4;
+// $dark: #263238;
+// $light: #f2f4f8;
+// $extra-light: #ebf3f5;
+// $secondary: #727b84;
+
+// //Light colors
+// $light-danger: #f9e7eb;
+// $light-success: #e8fdf8;
+// $light-warning: #fff8ec;
+// $light-primary: #f1effd;
+// $light-info: #e3f3fd;
+// $light-inverse: #f6f6f6;
+// $light-megna: #e0f2f4;
+// $danger-dark: #cc1b17;
+// $success-dark: #1eacbe;
+// $warning-dark: #f6a801;
+// $primary-dark: #6352ce;
+// $info-dark: #028ee1;
+// $red-dark: #d61f1f;
+// $inverse-dark: #232a37;
+// $dark-transparent: rgba(0, 0, 0, 0.05);
+
+// // Normal Color
+// $white: #ffffff;
+// $red: #cc1b17;
+// $yellow: #f6a801;
+// $orange: #fe6241;
+// $purple: #7460ee;
+// $light-blue: #189ee6;
+// $megna: #00897b;
+// $blue: #2196F3;
+
+// // Solid Lists
+// $solid: () !default;
+// $solid: map-merge(
+//   (
+//     radicalred: #f62d51,
+//     fushiablue: #6f42c1,
+//     bamboo: #dd6705,
+//     easternblue: #17a2b8,
+//     scooter: #26c6da,
+//     blue: #2196F3,
+//     curiousblue: #1e88e5,
+//     cadetblue: #b2bac4,
+//     outerspace: #343a40,
+//     fiord: #455a64,
+//     blacksqueeze: #eef5f9,
+//     dustygray: #979797,
+//     gullgray: #99abb4,
+//     bluebayoux: #54667a,
+//     bodycolor: #fafafa,
+//     sidebar: #e3e8ee,
+//     white: #ffffff,
+//     light-text: #a6b7bf,
+//     navyblue: #3467B2,
+
+
+
+//     qrdteal:#018AA5,
+//     qrwhite: #f2f2f2,
+//     qrblack: #101010,
+//     qryellow: #FAE2A9,
+//     qrblue: #A9E2FA,
+
+//     qrlilac: #CBA9FA,
+//     qrteal: #A9FAF1,
+
+//     qrred: #FAA9A9,
+//     qrorange: #FAC4A9,
+//     qrgreen: #A9FAAF,
+//     qrviolet: #A9AFFA,
+
+//     yelloworange: #F9A93B,
+//     sunset:#F9BB35,
+//     creamyellow: #FDE2A0,
+//     palecyan:#98D7DC,
+//     cyan50:#6FCACD,
+//     cyan100:#34A7AA,
+//     charcoal:#1E1F1F,
+//     gray100: #6C6E70,
+//     gray50: #A7A9AC,
+//     gray30: #E6E7E8,
+
+//     darkteal: #4E979B
+//   ),
+//   $solid
+// );
+
+
+// // Gradient Lists
+// $gradients: () !default;
+// $gradients: map-merge(
+//   (
+//     radicalred: linear-gradient(to right, rgba(245, 114, 192, 1) 0%, rgba(232, 62, 140, 1) 100%),
+//     fushiablue: linear-gradient(to right, rgba(171, 141, 225, 1) 0%, rgba(111, 66, 193, 1) 100%),
+//     bamboo: linear-gradient(to right, rgba(255, 182, 121, 1) 0%, rgba(253, 125, 20, 1) 100%),
+//     easternblue: linear-gradient(to right, rgba(12, 189, 209, 1) 0%, rgba(5, 138, 165, 1) 100%),
+//     curiousblue: linear-gradient(to right, rgba(30, 136, 229, 1) 0%, rgba(14, 97, 169, 1) 100%),
+//     easterncurious: linear-gradient( 180deg, #0CBED1 0%, #058AA5 100%),
+//     solitude: linear-gradient(to right, rgba(255, 255, 255, 0.09) 0%, rgba(228, 242, 255, 1) 100%)
+//   ),
+//   $gradients
+// );
+
+// // Gradient backgrounds
+// @mixin bg-gradient($parent, $gradient) {
+//   #{$parent} {
+//     background: $gradient;
+//   }
+// }
+
+// // Solid backgrounds
+// @mixin bg-solid($parent, $solid) {
+//   #{$parent} {
+//     background: $solid;
+//   }
+// }
+
+// // Gradient text
+// @mixin text-gradient($parent, $gradient) {
+//   #{$parent} {
+//     background-image: $gradient;
+//     color: transparent;
+//     -webkit-background-clip: text;
+//     background-clip: text;
+//   }
+// }
+
+// // Solid text
+// @mixin text($parent, $solid) {
+//   #{$parent} {
+//     color: $solid;
+//   }
+// }
+
+// //Solid Outline Link text & underline
+// @mixin text-underline($parent, $solid) {
+//   #{$parent} {
+//     border-bottom: solid 1.2px $solid;
+//     color: $solid;
+//     background: transparent;
+//     line-height: 1.5;
+//     cursor: pointer;
+//     padding: 0 !important;
+//     border-radius: 0;
+//     white-space: nowrap;
+//   }
+// }
+
+// // Solid Outline Link text & underline hover
+// @mixin text-underline-hover($parent, $solid) {
+//   #{$parent}:hover {
+//     border-bottom: solid 1.2px $solid;
+//     color: $solid;
+//     background: transparent;
+//     line-height: 1.5;
+//     cursor: pointer;
+//     padding: 0 !important;
+//     border-radius: 0;
+//     white-space: nowrap;
+//   }
+// }
+
+// // Solid Outline Button
+// @mixin btn-outline($parent, $solid) {
+//   #{$parent} {
+//     border: solid 1.2px $solid;
+//     border-radius: 50px !important;
+//     background: transparent;
+//     line-height: 2;
+//     cursor: pointer;
+//     font-weight: 400;
+//   }
+// }
+
+
+// // Dash Outline Button
+// @mixin btn-outline-dash($parent, $solid) {
+//   #{$parent} {
+//     border: dashed 1px $solid;
+//     border-radius: 50px !important;
+//     background: transparent;
+//     line-height: 1.5;
+//     cursor: pointer;
+//     font-weight: 400;
+//   }
+// }
+
+// // Solid Rounded Button
+// @mixin btn-rounded($parent, $solid) {
+//   #{$parent} {
+//     border: solid 1px $solid;
+//     border-radius: 100px !important;
+//     line-height: 1.5;
+//     cursor: pointer;
+//     font-weight: 400;
+//   }
+// }
+
+// // Solid Rounded Button
+// @mixin btn-rounded-solid($parent, $solid) {
+//   #{$parent} {
+//     background: $solid;
+//     border-radius: 100px !important;
+//     //line-height: 1.5;
+//     cursor: pointer;
+//     font-weight: 400;
+//     line-height: 2.5;
+//   }
+// }
+
+// // Gradient Classes
+// @each $gradient, $value in $gradients {
+//   @include bg-gradient(".bg-gradient-#{$gradient}", $value);
+// }
+
+// // Gradient Classes
+// @each $gradient, $value in $gradients {
+//   @include text-gradient(".text-gradient-#{$gradient}", $value);
+// }
+
+// // Solid Text Classes
+// @each $solid, $value in $solid {
+//   @include text(".text-#{$solid}", $value);
+// }
+
+// // Solid BG Classes
+// @each $solid, $value in $solid {
+//   @include bg-solid(".bg-solid-#{$solid}", $value);
+// }
+
+// // Solid Link Text Classes
+// @each $solid, $value in $solid {
+//   @include text-underline(".text-underline-#{$solid}", $value);
+// }
+
+// // Solid Link Text Classes :hover
+// @each $solid, $value in $solid {
+//   @include text-underline-hover(".text-underline-hover-#{$solid}", $value);
+// }
+
+// // Solid Outline Button Classes
+// @each $solid, $value in $solid {
+//   @include btn-outline(".btn-outline-#{$solid}", $value);
+// }
+
+// // Dashed Outline Button Classes
+// @each $solid, $value in $solid {
+//   @include btn-outline-dash(".btn-outline-dash-#{$solid}", $value);
+// }
+
+// // Solid Outline Button Classes
+// @each $solid, $value in $solid {
+//   @include btn-rounded(".btn-rounded-#{$solid}", $value);
+// }
+
+// // Solid  Button Classes
+// @each $solid, $value in $solid {
+//   @include btn-rounded-solid(".btn-rounded-solid-#{$solid}", $value);
+// }
+
+// // font
+// $font-16: 16px;

@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import 'material-icons/iconfont/material-icons.css';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica", sans-serif; }
+
+@font-face {
+    font-family: "Helvetica" !important;
+    src: local("Helvetica"), url("/src/assets/fonts/Warownia.ttf");
+}
+
+/* @font-face{
+    font-family: "Yugothic";
+    src: local("Yugothic", url("/src/assets/fonts/yu-gothic.ttf"))
+} */
+
+@font-face{
+    font-family: "YuGothicBold";
+    src: local("YuGothicBold", url("/src/assets/fonts/yugothib.ttf"))
+}

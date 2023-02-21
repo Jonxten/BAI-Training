@@ -1,0 +1,102 @@
+<!-- HEADER START -->
+<div class="fx-layout-row">
+    <mat-card class="header">
+        <div class="fx-layout-row">
+            <div class="fx-layout-column">
+                <mat-label class="project-name">Project Name</mat-label>
+            </div>
+            <div class="fx-layout-column">
+                <div class="fx-layout-row button-group">
+                    <button mat-button class="header-button">Selected</button>
+                        <mat-divider [vertical]="true" style="border-top-color: white;"></mat-divider>
+                        <!-- <mat-label class="button-divider">|</mat-label> -->
+                    <button mat-button class="header-button">Not Selected</button>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>
+<!-- HEADER END -->
+
+<!-- BODY START -->
+<div class="fx-layout-row">
+
+    <!-- Possible Colors -->
+    <div class="fx-layout-column" style="width:35%; margin: 0% 7.5% 0% 7.5%;">
+
+        <div class="fx-layout-row" style="margin: 36px;"></div>
+        <!-- Color Picker -->
+        <mat-label class="possible-colors">Possible Colors</mat-label>
+        <div class="fx-layout-row fx-layout-align-space-between-center">
+            <mat-card class="color-picker" style="background-color: #086ab0;"></mat-card>
+            <mat-card class="color-picker" style="background-color: #ff2300;"></mat-card>
+            <mat-card class="color-picker" style="background-color: #3eb244;"></mat-card>
+            <mat-card class="color-picker" style="background-color: #0180ff;"></mat-card>
+            <mat-card class="color-picker" style="background-color: #828282;"></mat-card>
+        </div>
+        <!-- Color Picker END -->
+
+        <div class="fx-layout-row" style="margin: 24px;"></div>
+
+        <!-- Textures START -->
+        <div class="fx-layout-row">
+            <mat-label class="textures">Textures</mat-label>
+        </div>
+        <div class="fx-layout-row">
+            <mat-card class="texture-picker" style="background-color: white;"></mat-card>
+        </div>
+        <!-- Textures END -->
+
+        <div class="fx-layout-row" style="margin: 24px;"></div>
+
+        <!-- Buttons START -->
+        <div class="fx-layout-row fx-layout-align-space-between-center fx-layout-gap-2vw">
+            <button class="footer-buttons" style="background-color: #3eb244">Save</button>
+            <button class="footer-buttons" style="background-color: #0180ff">Edit</button>
+            <button class="footer-buttons" style="background-color: #ff2300">Delete</button>
+            <button class="footer-buttons-back">Back</button>
+            </div>
+        <div class="fx-layout-row fx-layout-align-space-between-center fx-layout-gap-2vw">
+            <button class="footer-buttons-bottom" style="background-color: #828282">Cancel</button>
+            <button class="footer-buttons-bottom" style="background-color: #0180ff">Log In</button>
+            <!-- Ghost buttons for aligning bottom buttoms (Weird solution) -->
+            <button class="footer-buttons-ghost"></button>
+            <button class="footer-buttons-ghost"></button>
+            <!-- Ghost buttons for aligning bottom buttoms END -->
+        </div>
+        <!-- Buttons END -->
+            
+    </div>
+    <!-- Possible Colors END-->
+
+    <!--  Sample Header  -->
+    <div class="fx-layout-column" style="width:35%; margin: 0% 7.5% 0% 7.5%;">
+
+        <div class="fx-layout-row" style="margin: 24px;"></div>
+            <mat-label class="sample-header-title">Sample Header</mat-label>
+        <div class="fx-layout-row" style="margin: 26px;"></div>
+            <mat-label class="sample-header-sub">Sample Sub Header</mat-label>
+        <div class="fx-layout-row" style="margin: 24px;"></div>
+            <p class="sample-header-body">This is a sample text box that might be used for description purposes. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="fx-layout-row" style="margin: 24px;"></div>
+
+        <!-- Footer -->
+        <div class="fx-layout-row">
+            <div class="fx-layout-column fx-layout-align-start-end" style="width:40%;">
+                <mat-label class="footer-label">Label:</mat-label>
+            </div>
+            <div class="fx-layout-column" style="width:55%; margin-left: 5%">
+                <mat-label class="footer-data">Information Data</mat-label>
+                    <div class="fx-layout-row" style="margin: 36px;"></div>
+                <a href="#" class="footer-data-link">Information Data Link</a>
+            </div>
+        </div>
+        <!-- Footer END -->
+
+    </div>
+     <!--  Sample Header END  -->
+
+</div>
+<!-- BODY END -->
+
+    

@@ -1,0 +1,270 @@
+ // Common styles based on Figma for Steer
+
+// Font Weight
+$weights: 400, 500, 600, 700, 800;
+@each $weight in $weights{
+  .fw-#{$weight}{
+    font-weight: #{$weight} !important;
+  }
+}
+
+// Line Height
+$heights: 14, 15, 16, 18, 20, 21, 22, 24, 26, 27, 30, 60;
+@each $height in $heights{
+  .lh-#{$height}{
+    line-height: #{$height}px !important;
+  }
+}
+
+// Border Radius
+$radii: 8, 16, 20, 100;
+@each $radius in $radii{
+  .br-#{$radius}{
+    border-radius: #{$radius}px !important;
+  }
+}
+
+// Padding and Margin per side shortcut
+// Class pt10 = padding-top: 10px;
+$sides: ("b": "bottom","t": "top","l": "left","r": "right");
+@each $prefix, $value in $sides {
+  @for $i from 0 through 10 {
+    .m#{$prefix} {
+      &#{($i * 5)} {
+        margin-#{$value}:#{($i * 5)}px !important;
+      }
+    }
+    .p#{$prefix} {
+      &#{($i * 5)} {
+        padding-#{$value}:#{($i * 5)}px !important;
+      }
+    }
+  }
+}
+
+// Percent
+@each $prefix, $value in $sides {
+  @for $i from 0 through 10 {
+    .mpc#{$prefix} {
+      &#{($i * 1)} {
+        margin-#{$value}:calc(#{($i * 1)} * 1%) !important;
+      }
+    }
+    .ppc#{$prefix} {
+      &#{($i * 1)} {
+        padding-#{$value}:calc(#{($i * 1)} * 1%) !important;
+      }
+    }
+  }
+}
+
+// Margin
+.m-0-auto{
+    margin: 0 auto;
+}
+.m-tb-2p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.m-t-2p{
+    margin-top: 2%;
+}
+.m-t-10{
+    margin-top: 10px;
+}
+.m-4p{
+    margin: 4%;
+}
+.m-5{
+    margin: 5px;
+}
+.m-0{
+    margin: 0px !important;
+}
+.m-l-2p{
+    margin-left: 2%;
+}
+.m-r-5p{
+    margin-right: 5%;
+}
+.m-l-10p{
+    margin-left: 10%;
+}
+.m-b-15{
+    margin-bottom: 15%;
+}
+
+// Padding
+.p-1p{
+    padding: 1%;
+}
+.p-2p{
+    padding: 2%;
+}
+.p-2p-4p{
+    padding: 2% 4%;
+}
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-tb-4p{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.p-5-15{
+    padding: 5px 15px;
+}
+
+// Font related
+.capitalize{
+  text-transform: capitalize !important;
+}
+.fw-normal{
+    font-weight: normal;
+}
+.fs72{
+    font-size: 72px;
+}
+.text-center{
+    text-align: center;
+}
+.text-start{
+    text-align: start;
+}
+.italic{
+    font-style: italic;
+}
+.allcaps{
+  text-transform: uppercase;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+
+// Colors (BG)
+.bg-lightyellow{
+  background-color: #FFF6E0 !important;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+// Font sizes using rem
+
+.fsr-8{
+  font-size: calc((8 / 16) * 1rem) !important;
+}
+
+.fsr-10{
+  font-size: calc((10 / 16) * 1rem) !important;
+}
+ 
+.fsr-11{
+  font-size: calc((11 / 16) * 1rem) !important;
+}
+ 
+.fsr-12{
+  font-size: calc((12 / 16) * 1rem) !important;
+}
+
+.fsr-14{
+  font-size: calc((14 / 16) * 1rem) !important;
+}
+ 
+.fsr-16{
+  font-size: calc((16 / 16) * 1rem) !important;
+}
+
+.fsr-18{
+  font-size: calc((18 / 16) * 1rem) !important;
+}
+
+.fsr-20{
+  font-size: calc((20 / 16) * 1rem) !important;
+}
+
+.fsr-21{
+  font-size: calc((21 / 16) * 1rem) !important;
+}
+ 
+.fsr-22{
+  font-size: calc((22 / 16) * 1rem) !important;
+}
+ 
+.fsr-23{
+  font-size: calc((23 / 16) * 1rem) !important;
+}
+ 
+.fsr-24{
+  font-size: calc((24 / 16) * 1rem) !important;
+}
+ 
+.fsr-25{
+  font-size: calc((25 / 16) * 1rem) !important;
+}
+ 
+.fsr-26{
+  font-size: calc((26 / 16) * 1rem) !important;
+}
+ 
+.fsr-27{
+  font-size: calc((27 / 16) * 1rem) !important;
+}
+
+.fsr-28{
+  font-size: calc((28 / 16) * 1rem) !important;
+}
+
+.fsr-30{
+  font-size: calc((30 / 16) * 1rem) !important;
+}
+
+.fsr-40{
+  font-size: calc((40 / 16) * 1rem) !important;
+}
+
+ // * FLEX SYNTAX
+
+ //fxLayout
+ $directions: "row", "column";
+ @each $direction in $directions {
+  .fx-layout-#{$direction} {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: #{$direction};
+  }
+ }
+
+ //fxLayoutAlign
+ $verticals: ("start": "flex-start", "none": "flex-start", "center": "center", "end": "flex-end", "space-around": "space-around", "space-between": "space-between", "space-evenly": "space-evenly");
+ $horizontals: ("stretch": "stretch", "none": "stretch", "start": "flex-start", "center": "center", "end": "flex-end");
+@each $vKey, $vValue in $verticals {
+  @each $hKey, $hValue in $horizontals {
+    .fx-layout-align-#{$vKey}-#{$hKey} {
+      display: flex !important;
+      box-sizing: border-box !important;
+      place-content: #{$hValue} #{$vValue} !important;
+      align-items: #{$hValue} !important;
+    }
+  }
+}
+
+ //fxFlex
+ .fx-flex {
+    flex: 1 1 0% !important;
+    box-sizing: border-box !important;
+ }
+ @for $flex from 1 through 100 {
+  .fx-flex-#{$flex} {
+    flex: 1 1 100% !important;
+    box-sizing: border-box !important;
+    max-width: percentage($flex)/100 !important;
+  }
+ }

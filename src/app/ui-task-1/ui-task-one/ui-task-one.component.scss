@@ -1,0 +1,195 @@
+@import "../../shared/styles/common.scss";
+
+.header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 95%;
+    background-color: #086ab0;
+    border-radius: 0px;
+}
+
+.project-name{
+    font-size: 36px;
+    line-height: 30px;
+    font-family: "Helvetica";
+    font-weight: 700;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.button-group{
+    margin: 0px 0px 0px 45px;
+}
+
+.mat-divider.mat-divider-vertical{
+    border-top: 0;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-color: white;
+    height: 120%;
+    margin: 0px 8px 0px 8px;
+}
+
+.header-button{
+    background-color: #086ab0;
+    border-style: none;
+    white-space: nowrap;
+    font-family: 'Yu Gothic UI';
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+    cursor: pointer
+}
+
+.header-button:focus{
+    background-color: #086ab0;
+    border-style: none;
+    white-space: nowrap;
+    font-family: 'Yu Gothic UI';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #FFFFFF;
+    cursor: pointer
+}
+
+
+.header-button{
+    background-color: #086ab0;
+    border-style: none;
+    white-space: nowrap;
+    font-family: 'Yu Gothic UI';
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+    cursor: pointer
+}
+
+
+.possible-colors{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 21px;
+    margin: 0px 0px 15px 0px;
+}
+
+.textures{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin: 0px 0px 15px 0px;
+    font-size: 24px;
+    line-height: 21px;
+}
+
+.color-picker{
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px black;
+    padding: 35px 35px;
+}
+
+.texture-picker{
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px black;
+
+    box-shadow: 5px;
+    padding: 75px 75px;
+}
+
+.footer-buttons{
+    font-family: 'Yu Gothic UI';
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0px;
+    border-style: none;
+    border-radius: 5px;
+    color:#FFFFFF;
+    width: 110px;
+    white-space: nowrap;
+    margin: 0px 0px 15px 0px;
+    cursor: pointer;
+}
+
+.footer-buttons-back{
+    font-family: 'Yu Gothic UI';
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0px;
+    border-style: solid;
+    border-color: #c8c8c8;
+    border-radius: 5px;
+    color: gray;
+    width: 110px;
+    white-space: nowrap;
+    margin: 0px 0px 15px 0px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.footer-buttons-bottom{
+    font-family: 'Yu Gothic UI';
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0px;
+    border-style: none;
+    border-radius: 5px;
+    color:#FFFFFF;
+    width: 110px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.footer-buttons-ghost{
+    background-color: white;
+    padding: 10px 0px;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    width: 110px;
+    pointer-events: none;
+}
+
+.sample-header-title{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 37px;
+}
+
+.sample-header-sub{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 28px;
+}
+
+.sample-header-body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.footer-label{
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.footer-data{
+    margin: 7px 0px 0px 0px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.footer-data-link{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+
+}
