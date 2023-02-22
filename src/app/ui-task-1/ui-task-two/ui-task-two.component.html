@@ -1,5 +1,41 @@
-<div class="bg">
-    <mat-card>
+<body class="bg fx-flex fx-layout-align-center-center">
+    <mat-card class="card-main">
+        <div class="fx-layout-row">
 
+        <!-- Course Picture -->
+            <div class="image-container">
+                <img src="../assets/images/Kal.jpg">
+            </div>
+        <!-- Course Picture -->
+            
+        <!-- Course Details -->
+            <div class="fx-layout-column course-details">
+                <div class="fx-layout-row">
+                    <mat-label class="course-title">Kal'tsit Sermon Session</mat-label>
+                    <angular-emojis [name]="'anger'" size="11" class="course-title-emojis"></angular-emojis>
+                    <mat-basic-chip class="course-tags" style="background-color: greenyellow;">#SOLID</mat-basic-chip>
+                    <mat-basic-chip class="course-tags" style="background-color: cyan">#MONT3R</mat-basic-chip>
+                </div>
+                <div class="fx-layout-row">
+                    <p class="course-description">Overspent the monthly Rhodes Island budget again? Let's see what the ex-wife and her horribly mutated spine has to say.</p>
+                </div>
+                <div class="fx-layout-row fx-layout-align-start-center">
+                    <angular-emojis [name]="'muscle'" size="11" class="course-rating-emojis"></angular-emojis>
+                    <mat-label class="course-ratings">HARD</mat-label>
+                    <angular-emojis [name]="'timer_clock'" size="11" class="course-rating-emojis"></angular-emojis>
+                    <mat-label class="course-ratings">24 HR</mat-label>
+                    <angular-emojis [name]="'star'" size="11" class="course-rating-emojis"></angular-emojis>
+                    <mat-label class="course-ratings">5 / 5</mat-label>
+                </div>
+            </div>
+        <!-- Course Details -->
+        
+        <!-- Course Price -->
+            <div class="fx-layout-column fx-layout-align-center-center price-tag-container">
+                <mat-label class="price-tag">$14.99</mat-label>
+            </div>
+        <!-- Course Price -->
+
+        </div>
     </mat-card>
-</div>
+</body>

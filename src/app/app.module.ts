@@ -5,6 +5,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { AngularEmojisModule } from 'angular-emojis';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { AppComponent } from './app.component';
 import { UiTaskOneComponent } from './ui-task-1/ui-task-one/ui-task-one.component';
@@ -24,7 +26,9 @@ import { UiTaskTwoComponent } from './ui-task-1/ui-task-two/ui-task-two.componen
     MatFormFieldModule,
     MatCardModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    AngularEmojisModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
