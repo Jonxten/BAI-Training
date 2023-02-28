@@ -9,15 +9,17 @@ import { AngularEmojisModule } from 'angular-emojis';
 import { MatChipsModule } from '@angular/material/chips';
 
 import { AppComponent } from './app.component';
-import { UiTaskOneComponent } from './ui-task-1/ui-task-one/ui-task-one.component';
+import { UiTaskOneComponent } from './ui-tasks/ui-task-1/ui-task-one.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UiTaskTwoComponent } from './ui-task-1/ui-task-two/ui-task-two.component';
+import { UiTaskTwoComponent } from './ui-tasks/ui-task-2/ui-task-two.component';
+import { UiTaskThreeComponent } from './ui-tasks/ui-task-3/ui-task-three.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UiTaskOneComponent,
-    UiTaskTwoComponent
+    UiTaskTwoComponent,
+    UiTaskThreeComponent
   ],
   imports: [
     BrowserModule,

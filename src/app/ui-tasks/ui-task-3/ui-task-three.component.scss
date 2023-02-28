@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,00;1,400&display=swap');
+
+.container{
+    width: 1000px;
+    height: 800px;
+    margin: 2% auto 2% auto;
+    border-style: solid;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 20px 0px 0px 0px;
+    justify-content: center;
+}
+
+.title-container{
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #34A7AA;
+    margin: 6px;
+}
+
+.project-creation-stepper{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.step-name{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: #6C6E70;
+    cursor: pointer;
+}
+
+.step-name:active{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: #34A7AA;
+}
+
+.step-name + .step-name:after{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: #6C6E70;
+}
+
+.stepper-body{
+    display: flex;
+    margin: 35px 50px 20px 50px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.upload-image{
+    display: flex;
+    min-width: 240px;
+    height: 150px;
+    padding-top: 15px;
+    border: 2px dashed #a7a9ac;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #a7a9ac;
+}
+
+.project-detail-forms{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 0px 5% 0px 5%;
+    width: 100%;
+}
+
+.gray-text{
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #a7a9ac;
+    line-height: 15px;
+    
+}
+
+.detail-form{
+    margin: -12px 0px 20px 0px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    padding: 5px 9px 8px 9px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 10px;
+}
+
+.detail-form-select{
+    margin: -13px 0px 20px 0px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    padding: 5px 9px 6px 4px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 10px;
+    color: black;
+}
+
+
+.location-form{
+    background: url(../../../assets/icons/geo-alt.svg) no-repeat 7px 7px;
+    background-position:  right center;
+}
+
+.form-row{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-column{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.date-form{
+    background: url(../../../assets/icons/calendar.svg) no-repeat 5px 5px;
+    background-position:  right center;
+}
+
+.button-container{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cyan-button{
+    margin: 5px;
+    display: flex;
+    padding: 7px;
+    width: 20%;
+    height: 34px;
+    background-color:#34A7AA;
+    border: none;
+    border-radius: 18px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gray-button{
+    margin: 5px;
+    display: flex;
+    padding: 7px;
+    width: 20%;
+    height: 34px;
+    background-color:#e6e7e8;
+    border: none;
+    border-radius: 18px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dropdown-container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dropdown-selection{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    border: 0px solid #a7a9ac;
+    border-radius: 18px;
+    padding: 20px 20px 10px 20px;
+    margin: 0px 0px 20px 0px;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 19%) !important
+}
+
+.dropdown-selection-active{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    right: -17px; 
+    position: relative;
+    max-height: 380px;
+    max-width: 800px;
+    border: 0px solid #a7a9ac;
+    border-radius: 18px;
+    padding: 20px 20px 10px 20px;
+    margin: 0px 0px 20px 0px;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 19%) !important
+}
+
+.dropdown-options{
+    max-width: 160px;
+    height: 160px;
+    border: 2px solid #a7a9ac;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 7px 20px 7px;
+    text-align: center;
+}
+
+.dropdown-options:focus{
+    border: 2px solid #34A7AA;
+    border-radius: 18px;
+    padding: 20px 55px 10px 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.dropdown-title{
+    margin: 0px 0px 0px 0px;
+}
+
+.cyan-text{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #34A7AA;
+}
+
+.bold-text{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.feature-settings{
+    display: flex;
+    flex-direction: column;
+    border: 0px solid #a7a9ac;
+    border-radius: 18px;
+    margin: 0px 0px 0px 20px;
+    padding: 23px;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 19%) !important;
+    width: 350px;
+    height: 500px;
+}
+
+.feature-settings-detail{
+    margin: -9px 0px 8px 0px;
+}
+
+.indented{
+    margin: 0px 0px 0px 8px;
+}
+
+.form-check-input:checked{
+    background-color: #34A7AA !important;
+    border-color: none;
+}
+
+.form-check:checked{
+    background-color: #34A7AA !important;
+    border-color: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
